@@ -1,0 +1,979 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+--main_color:blue;
+--label_color: yellow;
+--text_color:green;
+--margin-left:10%;
+--padding-left:10%;
+--padding-btns: 10px 20px;
+
+}
+
+body{
+  height: 10000px ; 
+}
+ 
+
+section.main{
+
+    height: 750px;
+    display: flex;
+}
+
+section div.left{
+display:flex;
+flex: 1;
+margin-left:200px;
+flex-direction:column;       
+}
+
+section.main div.left div.logo-container{
+height: 80px;
+
+display: flex;
+align-items: center;
+flex: .3;
+}
+
+section.main div.left div.logo-container img.logo{
+width:10%;
+}
+
+section.main div.left div.main-content {
+
+flex: 1.2;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+gap: 30px;
+}
+
+section.main div.left div.main-content h1{
+ font-size: 70px;
+ width: 70%;  
+}
+
+section.main div.left div.main-content p{
+font-size: 18px;
+width: 50%;
+line-height: 30px;
+color: gray;
+}
+
+
+section.main div.left  div.learn-more{
+    flex: .5;
+}
+
+section.main div.left div.learn-more button.learn-more{
+    padding: 10px 60px;
+    border: none;
+    background-color:lightblue;
+    border-radius: 6px;
+}
+/* end left section*/
+  
+
+
+
+
+
+
+
+
+/* start right section*/
+    /*section.main before any div*/
+    section.main div.right{
+        flex: 1;
+        background: url(../assets/images/19.jpg);
+       background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom-left-radius: 120px;
+    }
+    section.main div.right div.top{
+        height: 110px;
+       
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    section.main div.right nav{
+      
+    }
+     
+       
+    section.main div.right nav ul  {
+      list-style-type:none;
+      display: flex;
+      gap: 50px;
+
+    }
+    section.main div.right nav li{
+        background-color: rgba(255, 255, 255, .1);
+        padding: var(--padding-btns);
+
+        border-radius: 10px;
+    }
+
+    section.main div.right button.sign{
+       padding: var(--padding-btns);
+       border-radius: 10px;
+       border: none;
+
+    }
+ /*end top*/ 
+    
+
+
+
+
+/* start bottom*/
+
+    section.main div.right div.bottom{
+        height: 200px;
+        display: flex;
+      justify-content: space-around;
+      
+    }
+    section.main div.right div.bottom div.right-info { 
+    
+     width: 40%;
+     height: 140px;
+     background-color:white;
+    border-radius: 20px;
+     display: flex;
+     gap: 30px;
+     align-items: center;
+     justify-content: center;
+    padding-left: 20px;
+
+    }
+    section.main div.right div.bottom div.right-info img.avatar {
+        width: 60px; 
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+
+            }
+
+  /* end first section left/right*/
+
+
+
+
+
+
+
+
+   
+ 
+
+
+
+
+/*start second section /left*/
+/* or featured courses*/
+:root{
+    --main_color:blue;
+    --label_color: yellow;
+    --text_color:green;
+    --margin-left:10%;
+    --padding-btns: 10px 20px;
+    --color:
+}
+    
+section.featured-courses{
+
+    margin:150px;
+    height: 800px;
+    margin-left: var(--margin-left);
+    /*background-color:grey ;*/
+}
+
+
+section.featured-courses div.our-recommendation{
+ color: var(--text_color);
+}
+
+
+section.featured-courses div.our-recommendation::before{
+    content: '';
+    width: 60px;
+    height: 2px;
+   background-color: var(--text_color);
+   display: inline-block;
+}
+
+section.featured-courses div.featured-list-title
+ {
+    height: 100px;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section.featured-courses div.featured-list-title div.list-features{
+    display: flex;
+    gap: 80px;
+}
+section.featured-courses div.featured-list-title div.title{
+    font-size: 20px;
+    padding-left: var(--padding-left);
+  
+}
+
+section.featured-courses div.featured-list-title div.list-features>div{
+   
+    padding: 20px 20p;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 14px;
+    border-radius: 20px;
+    border: 2px solid  white;
+}
+
+section.featured-courses div.featured-list-title div.list-features div.maincourses-btn{
+    background-color: var(--main_color);
+    color: white;
+    padding: 20px 20px  ;
+    border-radius: 60px;
+    
+}
+
+section.featured-courses div.feature-carts-container{
+    height: 700px;
+    /*background-color:aqua;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.featured-courses div.feature-carts-container div.cart-feature{
+    width: 400px;
+    height: 600px;
+    /*background-color: brown;*/
+    
+  
+}
+section.featured-courses div.feature-carts-container div.cart-feature
+div.cart-image-container{ 
+width: 100%;
+height: 350px;
+background: url(../assets/images/OIP\ \(1\).jpg) center;
+background-size: cover;
+border-radius: 30px;
+position: relative;
+
+}
+
+
+section.featured-courses div.feature-carts-container div.cart-feature
+ button.label-design{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: aliceblue;
+    color: blueviolet;
+    font-weight: bold;
+
+}
+section.featured-courses div.feature-carts-container div.cart-feature h2 {
+
+    margin-top: 30px 0px 30px 0px;
+    color: var(--main_color);
+
+}
+section.featured-courses div.feature-carts-container div.cart-feature > p.price{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+section.featured-courses div.feature-carts-container div.cart-feature > p.des{
+    line-height: 30px;
+    color: rgb(104, 85, 85);
+
+}
+section.featured-courses div.feature-carts-container div.cart-feature
+div.auther {
+height: 100px;
+/*background-color: brown;*/
+display: flex;
+gap: 20px;
+align-items: center;
+
+}
+
+section.featured-courses div.feature-carts-container div.cart-feature
+div.auther div.avatar{
+   width: 100px;
+  height: 100px;
+    background: url(../assets/images/OIP\ \(3\).jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+section.featured-courses div.feature-carts-container div.cart-feature
+div.auther div.content p.title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+section.featured-courses div.feature-carts-container div.cart-feature
+div.auther div.content >p.des{
+    font-size: 14px;
+    color: gray;
+
+}
+/* end section 2*/
+
+
+
+
+/* start section 3*/
+section.best-course{
+/*background-color: brown;*/
+margin-left: var(--margin-left);
+margin-right: var(--margin-left);
+height: 500px;
+display: flex;
+
+
+}
+
+
+section.best-course div.left{
+    flex: 1;
+
+}
+section.best-course div.left p.ready-to-buy{
+    color: var(--text_color);
+
+
+}
+section.best-course div.left p.ready-to-buy::before{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: var(--text_color);
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 4px;
+  
+}
+
+
+section.best-course div.left h2{
+    margin-top: 20px;
+    color: var(--main_color);
+    font-size: 26px;
+}
+
+section.best-course div.left p.des{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    line-height: 30px;
+    color: gray;
+
+}
+
+section.best-course div.left h3{
+    margin-bottom: 20px;
+   }
+   section.best-course div.left div.resoures-best-course{
+    /*background-color: blueviolet;*/
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-bottom: 20px;
+
+   }
+
+section.best-course div.left div.course-deatils{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+section.best-course div.left div hr{
+    width: 75%;
+    border: none;
+    height: 2px;
+    background-color: grey;
+}
+
+/*start section right in section 3*/
+/* beofre any one section.best-course*/
+
+
+
+
+section.best-course div.right{
+ flex: 1;
+background: url(../assets/images/OIP.jpg);
+width: 100%;
+height: 100%;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+
+}
+
+section.best-course div.left div.callus{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+   
+}
+section.best-course div.left div.callus div.auth-course{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+
+
+}
+
+
+section.best-course div.left div.callus img.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+section.best-course div.left div.callus div.call-btn{
+    display: flex;
+ 
+  
+}
+section.best-course div.left div.callus div.call-btn{
+    background-color:black;
+    width: 140px;
+    height: 70%;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+
+
+
+
+/* start section 4 about-us*/
+
+
+
+
+section.about-us{
+    margin-top: 80px;
+/*background-color: red;*/
+height: 700px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+section.about-us p.label{
+    color: var(--label_color);
+
+}
+section.about-us h2{
+font-size: 40px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+section.about-us div.container-review{
+/* background-color: brown;*/
+    height: 600px;
+    width: 900px;
+    position: relative;
+
+}
+section.about-us div.container-review div.imgcart{
+   background: url(../assets/images/wp2568619.webp);
+   width: 100%;
+   height:500px;
+   position:absolute;
+   background-size:cover;
+
+}
+
+
+section.about-us div.container-review div.info{
+    /*background-color: black;*/
+    background-color: white;
+    color:gray;
+    height: 250px;
+    width: 70%;
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+    border-radius: 10px;
+    padding: 25px;
+   
+}
+section.about-us div.container-review div.info h3 {
+font-size: 30px;
+color: black;
+}
+
+section.about-us div.container-review div.info p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+section.about-us div.container-review div.img{
+    display: flex;
+    align-items: center;
+    
+
+}
+section.about-us div.container-reviewd div.title{
+ display: flex;
+ align-items: center;
+ margin-top: 20px;
+ margin-bottom: 30px;
+
+}
+section.about-us div.container-review div.info div.auther 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+section.about-us div.container-review div.info div.auther
+div.auther-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+section.about-us div.container-review div.info div.auther
+div.auther-content h4{
+    color: black;
+}
+
+
+
+
+section.about-us div.container-review div.info div.auther
+div.auther-content img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+section.about-us div.container-review div.info div.auther div.auther-rate{
+    display: flex;
+align-items: center;
+gap: 10px;
+}
+
+/* end section 4*/
+
+
+
+
+/*start section 5 selling*/
+
+section.selling{
+    margin: var(--margin-left);
+    height: 800px;
+    /*background-color: aquamarine;*/
+  /*  background-color: black;*/
+
+}
+section.selling div.content-selling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+section.selling div.content-selling p.label{
+    color: var(--text_color);
+
+
+
+
+}
+section.selling div.content-selling h3{
+font-size: 34px;
+width: 30%;
+
+background-color: blanchedalmond;
+text-align: center;
+
+}
+section.selling div.content-selling > button{
+    background-color: var(--main_color);
+    color: white;
+    padding: 20px 20px;
+    border-radius: 25px;
+    border: none;
+
+}
+
+div.selling_content{
+
+}
+section.selling div.selling_content{
+    height: 100%;
+    display: flex;
+  
+ /*  background-color: aquamarine;*/
+}
+section.selling div.selling_content div.left{
+    flex: 1;
+   /background-color: brown;
+    
+
+}
+
+
+
+section.selling div.selling_content div.right{
+
+    flex: 1.3;
+    /*height:500px;*/
+    width: 100%;
+   /* background-color:green;*/
+    
+    background-size: cover;
+    margin-top: 10px;
+
+ 
+
+}
+
+section.selling div.selling_content div.left 
+div.left-content{
+display: flex;
+align-items: center;
+gap: 20px;
+margin-bottom: 20px;
+
+
+}
+
+section.selling div.selling_content div.left div.left-content
+div.main_img_selling{
+    flex: 1;
+    height: 200px;
+    width:100%;
+    background: url(../assets/images/OIP\ \(4\).jpg);
+    background-size: cover;
+    border-radius: 20px;
+  
+
+}
+section.selling div.selling_content div.left div.left-content
+div.content{
+    flex: 1.8;
+
+
+}
+section.selling div.selling_content div.left div.left-content
+div.content :nth-child(1){
+    margin-top: 15px;
+    display: flex;
+
+
+
+  
+    align-items: center;
+  
+
+
+
+
+}
+section.selling div.selling_content div.left div.left-content
+div.content :nth-child(1) > img{
+
+    width: 100px;  
+    height: 50px;
+    object-fit: cover;
+   
+
+
+
+}
+
+section.selling div.selling_content div.left div.left-content
+div.content :nth-child(2){
+    
+
+
+
+
+}
+
+section.selling div.selling_content div.right div.container
+div.img{
+    display: flex;
+    align-items: center;
+}
+section.selling div.selling_content div.right div.container
+div.img p.pargr{
+    margin-bottom: 15px;
+
+}
+section.selling div.selling_content div.right div.container
+div.title{
+    padding-left: 40px;
+    margin-top:10px; 
+    gap: 55px;
+
+    
+   
+}
+
+section.selling div.selling_content div.right div.container img.img1{
+   height: 400px;
+   width: 100%;
+}
+
+section.selling div.selling_content div.right div.container
+div.bigtitle{
+   padding-left: 40px;
+   text-align: center;
+
+}
+section.selling div.selling_content div.right div.container
+div.title{
+    font-size: 30px;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+
+section.selling div.selling_content div.right div.container
+div.title3{
+font-size: 30px;
+}
+
+
+    
+
+
+/*start section 6*/
+section.subscribe{
+    width: 80%;
+    height: 380px;
+    margin: 0 auto;
+    background: url(../assets/images/Subscribe\ \(1\).png) center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+
+}
+section.subscribe div.input{
+   
+    position: relative ;
+    bottom: 100px;
+   /* background-color: blue;*/
+    width: 500px;
+    height: 80px;
+
+
+}
+section.subscribe div.input > input{
+    position: absolute;
+  
+    width: 90%;
+    height: 50px;
+    left: 20px;
+    border-radius: 40px;
+    border: none;
+
+}
+section.subscribe div.input > img {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    border-radius: 50px;
+}
+
+section.subscribe div.input >button{
+    position: absolute;
+    right: 0;
+    padding: 12px 20px;
+    top: 0px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+::placeholder{
+
+   padding-left: 40px;
+}
+
+section.container{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    width: 100%;
+   
+
+}
+
+
+
+
+/*section.container div.btn1{
+
+    flex: ;
+    font-size:20px;
+    gap: 30px;
+
+}
+
+
+
+
+section.container div.btn2{
+    flex: ;
+    font-size:40px;
+   
+}
+section.container div.btn3{
+    flex: ;
+    font-size:40px;
+}
+section.container div.btn4{
+    flex:. ;
+    font-size:40px;
+}*/
+
+section.container{
+    height: 500px;
+    width: 100%;
+    margin-top: 200px;
+   /* display: flex;background-color: rgb(115, 115, 148);*/
+}
+
+section.container div.container1{
+   
+    flex: 0.7;
+    font-size: 30px;
+  padding-left: 250px;
+  /*  background-color: blueviolet;*/
+}
+section.container div.container1 p{
+padding-top: 40px;
+ font-size: 40px;
+ color: gray;
+}
+
+section.container div.container1 div.img {
+    display: flex;
+
+    padding-top: 40px;
+
+
+}
+
+section.container div.container2{
+    font-size: 30px;
+    display: flex;
+    /*background-color: aqua;*/
+  justify-content: space-evenly;
+  padding-left: 60px;
+  font-size: 40px;
+  gap: 30px;
+ 
+  flex: 1.3;
+}
+section.container div.container2 p.house{
+    color: gray;
+    padding-top: 20px;
+
+   
+}
+
+section.container div.container2 p.Apartment{
+    color: gray;
+    padding-top: 20px;
+}
+
+section.container div.container2 p.Villa{
+    color: gray;
+    padding-top: 20px;
+
+}
+
+section.container div.container2 div.Article div.btn p.btn1{
+    color: gray;
+    padding-top: 20px; 
+    
+
+}
+section.container div.container2 div.Article div.btn p.btn2{
+    color: gray;
+    padding-top: 20px; 
+}
+section.container div.container2 div.Article div.btn p.btn3{
+    color: gray;
+    padding-top: 20px; 
+}
+section.container div.container2 div.Article div.btn p.btn4{
+    color: gray;
+    padding-top: 20px; 
+    
+}
+
+section.container div.container2 div.contact div.ntn p.ntn1{
+    color: gray;
+    padding-top: 20px; 
+}
+section.container div.container2 div.contact div.ntn p.ntn2{
+    color: gray;
+    padding-top: 20px; 
+}
+section.container div.container2 div.contact div.ntn p.ntn3{
+    color: gray;
+    padding-top: 20px; 
+    /*line-height: 0px; :D better for padding-top for everyone and ul list better than divs for lists*/
+}
+
+
+
+   
